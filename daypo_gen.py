@@ -17,6 +17,7 @@ def limpiar_texto(txt: str) -> str:
     return (txt
             .replace('<<include>>', 'include')
             .replace('<<extend>>', 'extend')
+            .replace('&', '&amp;')
             .replace('<', '&lt;')
             .replace('>', '&gt;')
             )
